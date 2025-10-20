@@ -9,11 +9,12 @@
 
 ### Prepare the Data
 
-Unzip the USA road network file (`USA-road-t.USA.gr`) in the `data` directory.
+Download the USA road network data in the `data` directory:
 
 ```bash
 cd data
-cat USA-road-t.USA.gr.gz.part_* | gunzip -c > USA-road-t.USA.gr
+wget http://www.diag.uniroma1.it/challenge9/data/USA-road-t/USA-road-t.USA.gr.gz
+gunzip USA-road-t.USA.gr.gz
 ```
 
 ### Compile the Algorithms
