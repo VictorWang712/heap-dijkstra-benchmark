@@ -9,7 +9,15 @@
 
 ### Prepare the Data
 
-Download the USA road network data in the `data` directory:
+Download the USA road network data from [9th DIMACS Implementation Challenge: Shortest Paths](http://www.diag.uniroma1.it/challenge9/download.shtml) in the `data` directory:
+
+```bash
+cd data
+wget <graph_data_link>
+gunzip <file_archive_path>
+```
+
+Example:
 
 ```bash
 cd data
@@ -32,8 +40,12 @@ gcc code/bin/dijkstra_heap -o code/src/dijkstra_heap.c -O2
 
 ```bash
 cd benchmark
-python benchmark.py
+python benchmark.py --graph <graph_path>
 ```
+
+Parameters:
+
+- `--graph_path`: Path to the graph to be used
 
 This will:
 
@@ -41,6 +53,13 @@ This will:
 - Generate 1000 random queries.
 - Run both algorithms for each query.
 - Record the results and runtime in a log file under `benchmark/log/`.
+
+Example:
+
+```bash
+cd benchmark
+python benchmark.py --graph ../data/USA-road-t.USA.gr
+```
 
 ### Log File
 
