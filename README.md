@@ -1,5 +1,7 @@
 # heap-dijkstra-benchmark
 
+A benchmarking suite for comparing different Dijkstra algorithm implementations on large-scale road network graphs.
+
 ## Algorithms
 
 - `dijkstra_fib.c`: Dijkstra's algorithm using a Fibonacci Heap.
