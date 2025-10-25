@@ -9,7 +9,7 @@ from tqdm import tqdm
 
 BIN_DIR = "../code/bin"
 SRC_DIR = "../code/src"
-LOG_DIR = "./log"
+LOG_DIR = "./log/main"
 N_QUERIES = 2000
 
 def get_graph_info(graph_file):
